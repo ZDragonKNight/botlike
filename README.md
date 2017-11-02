@@ -27,4 +27,4 @@ Saat pertama login, pada terminal / termux kalian, kalian akan diberi authtoken 
 authToken -> EmGxXwhjizYIReLFxxxx.eFtfXEQQ9zeBAclHFogALq.3sv5woAxxxxHYXBJFxxxxxxxPToPfzUNv2VYvSXXXX=
 ```
 
-### Versi Farzain - zFz Digabungkan dengan Syamss
+### Versi Farzain - zFz Digabungkan dengan Syams225
