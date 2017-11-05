@@ -30,9 +30,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Thanks for add me, Jgn lupa bahagia ya, mau akunmu setengah bot pm aja ya",
+    'message':"Thanks for add me, Jgn lupa bahagia ya",
     "lang":"JP",
-    "comment":"Thanks for add me, Jgn lupa bahagia ya, mau akunmu setengah bot pm aja ya",
+    "comment":"Thanks for add me, Jgn lupa bahagia ya",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -70,14 +70,13 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 def autolike():#Like By Syams Copyright 2017
      for zx in range(0,20):#Like By Syams copyright 2017
         hasil = cl.activity(limit=20)#Like By Syams Copyright 2017
-        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:#Like By Syams Copyright 2017
+        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    #Like By Syams Copyright 2017
-            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)#Like By Syams Copyright 2017
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Kris-thea\n\nGunakanlah Bot ini Dengan Bijak（＾ω＾）\nAuto Like By »»»»» http://line.me/ti/p/GkwfNjoPDH «««««")#Like By Syams Copyright 2017
-            print "Like"#Like By Syams Copyright 2017
-          except:#Like By Syams Copyright 2017
-            pass#Like By Syams Copyright 2017
-        else:#Like By Syams Copyright 2017
+            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Kris-thea\n\nGunakanlah Bot ini Dengan Bijak（＾ω＾）\nAuto Like By »»»»» http://line.me/ti/p/GkwfNjoPDH «««««")            print "Like"#Like By Syams Copyright 2017
+          except:
+            pass
+        else:
             print "Already Liked"#Like By Syams Copyright 2017
      time.sleep(500)#Like By Syams Copyright 2017
 thread2 = threading.Thread(target=autolike)#Like By Syams Copyright 2017
